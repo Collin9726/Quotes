@@ -1,0 +1,21 @@
+.background{
+    background-image: url('../../assets/images/education.jpg');
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.jumbotron{
+    margin-left: 2em;
+    margin-right: 2em;    
+    background-color: rgb(0, 0, 0, 0.6);
+    color: white;
+    border-radius: 0%;
+}
+
+.jumbotron h1{
+    font-family: hothamFont;
+    font-size: 7em;
+}
