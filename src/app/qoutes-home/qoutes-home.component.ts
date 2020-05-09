@@ -7,15 +7,11 @@ import { Quote } from '../quote';
   styleUrls: ['./qoutes-home.component.css']
 })
 export class QoutesHomeComponent implements OnInit {
-  quotes: Quote[]=[
-    new Quote('Collin Owino', 'Michelle Muchai', 'Ai Shaaawrry', new Date()),
-    new Quote('Collin Owino', 'Michelle Muchai', 'Ai Shaaawrry', new Date()),
-    new Quote('Collin Owino', 'Michelle Muchai', 'Ai Shaaawrry', new Date()),
-    new Quote('Collin Owino', 'Michelle Muchai', 'Ai Shaaawrry', new Date()),
-    new Quote('Collin Owino', 'Michelle Muchai', 'Ai Shaaawrry', new Date()),
-    new Quote('Collin Owino', 'Michelle Muchai', 'Ai Shaaawrry', new Date()),
-    new Quote('Collin Owino', 'Michelle Muchai', 'Ai Shaaawrry', new Date())
-  ];
+  quotes: Quote[]=[];
+
+  addNewQuote(newQuote:Quote){
+    this.quotes.unshift(newQuote);
+  }
 
   constructor() { }
 
