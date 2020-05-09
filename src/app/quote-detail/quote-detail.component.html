@@ -1,1 +1,9 @@
-<p>quote-detail works!</p>
+<div class="card-header">
+    <button (click)='upvotePlus()' class="btn btn-secondary btn-sm">Upvote</button>
+    {{quote.upvotes}}
+    <br>
+    <button (click)='downvotePlus()' class="btn btn-outline-secondary btn-sm">Downvote</button>
+    {{quote.downvotes}}
+    <br>           
+    <p>Posted by <i>{{quote.yourName}}</i> on <i>{{quote.date|date}}</i>.</p>
+</div>

@@ -9,6 +9,14 @@ import { Quote } from '../quote';
 export class QuoteDetailComponent implements OnInit {
   @Input() quote: Quote;
 
+  upvotePlus(){
+    this.quote.upvotes=this.quote.upvotes+1;
+  }
+
+  downvotePlus(){
+    this.quote.downvotes=this.quote.downvotes+1;
+  }
+
   constructor() { }
 
   ngOnInit(): void {

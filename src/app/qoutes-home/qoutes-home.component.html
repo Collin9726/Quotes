@@ -21,11 +21,7 @@
                                 <footer class="blockquote-footer">{{quote.author}}</footer>
                             </blockquote>                               
                         </div>
-                        <div class="card-header">
-                            <button class="btn btn-secondary btn-sm">Upvote</button>
-                            <button class="btn btn-outline-secondary btn-sm">Downvote</button>           
-                            <p>Posted by <i>{{quote.yourName}}</i> on <i>{{quote.date|date}}</i>.</p>
-                        </div>
+                        <app-quote-detail [quote]='quote'></app-quote-detail>
                     </div>
                     <br>
                 </div>   

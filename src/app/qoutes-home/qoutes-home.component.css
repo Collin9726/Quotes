@@ -47,12 +47,6 @@ blockquote{
     font-size: 2em;
 }
 
-.card-header{
-    font-size: small;
-    background-color:rgb(211, 211, 211);
-    padding-bottom: 0%;
-}
-
 .card{
     background-color: rgb(211, 211, 211);
 }
