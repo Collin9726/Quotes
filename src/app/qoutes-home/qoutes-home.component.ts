@@ -13,6 +13,13 @@ export class QoutesHomeComponent implements OnInit {
     this.quotes.unshift(newQuote);
   }
 
+  deleteQuote(index:number){
+    var toDelete:boolean=confirm("Delete quote?");
+    if(toDelete){
+      this.quotes.splice(index,1);
+    }
+  }
+
   constructor() { }
 
   ngOnInit(): void {

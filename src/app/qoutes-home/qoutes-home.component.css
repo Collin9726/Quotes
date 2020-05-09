@@ -38,6 +38,14 @@
     visibility: hidden;
 }
 
+.card{
+    background-color: rgb(211, 211, 211);    
+}
+
+.deleteQuote{
+    font-size: large;
+}
+
 .card-body{
     line-height: 0.2em;
     font-size: 0.5em;
@@ -45,10 +53,6 @@
 
 blockquote{
     font-size: 2em;
-}
-
-.card{
-    background-color: rgb(211, 211, 211);
 }
 
 .margin-b{
