@@ -1,5 +1,5 @@
 .background{
-    background-image: url('../../assets/images/education.jpg');    
+    background-image: url('../../assets/images/homebackground.jpg');    
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -7,14 +7,56 @@
 }
 
 .jumbotron{
-    margin-left: 2em;
-    margin-right: 2em;    
+    margin-left: 2%;
+    margin-right: 2%;    
     background-color: rgb(0, 0, 0, 0.6);
     color: white;
-    border-radius: 0%;
+    border-radius: 0%;        
 }
 
 .jumbotron h1{
     font-family: hothamFont;
     font-size: 7em;
+}
+
+.quotes-form{
+    background-color: rgb(211, 211, 211,0.8);
+    padding: 2em;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.quotes-content{
+    max-height: 28em;
+    overflow-y: scroll;
+    padding-left: 2em;
+    padding-right: 2em;
+    line-height: 0.7em;
+}
+
+.quotes-content::-webkit-scrollbar{
+    visibility: hidden;
+}
+
+.card-body{
+    line-height: 0.2em;
+    font-size: 0.5em;
+}
+
+blockquote{
+    font-size: 2em;
+}
+
+.card-header{
+    font-size: small;
+    background-color:rgb(211, 211, 211);
+    padding-bottom: 0%;
+}
+
+.card{
+    background-color: rgb(211, 211, 211);
+}
+
+.margin-b{
+    margin-bottom: 2em;
 }

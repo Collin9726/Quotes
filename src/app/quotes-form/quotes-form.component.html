@@ -17,12 +17,12 @@
     </div>
     <div class="form-group">        
         <label for="quote">Quote</label>
-        <textarea class="form-control" id="quote" rows="4" required [(ngModel)]="newQuote.quote" name="quote" #quote='ngModel'></textarea>
+        <textarea class="form-control" id="quote" rows="2" required [(ngModel)]="newQuote.quote" name="quote" #quote='ngModel'></textarea>
         <div [hidden]="quote.valid || quote.pristine">
             <p class="red-danger">Quote is required</p>
         </div>        
     </div>
     <div class="text-center">
-        <button class="btn btn-primary">Add</button>
+        <button class="btn btn-secondary">Add</button>
     </div>                
 </form>
