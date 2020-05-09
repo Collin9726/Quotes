@@ -8,6 +8,12 @@ import { Quote } from '../quote';
 })
 export class QoutesHomeComponent implements OnInit {
   quotes: Quote[]=[
+    new Quote('Collin Owino', 'Michelle Muchai', 'Ai Shaaawrry', new Date()),
+    new Quote('Collin Owino', 'Michelle Muchai', 'Ai Shaaawrry', new Date()),
+    new Quote('Collin Owino', 'Michelle Muchai', 'Ai Shaaawrry', new Date()),
+    new Quote('Collin Owino', 'Michelle Muchai', 'Ai Shaaawrry', new Date()),
+    new Quote('Collin Owino', 'Michelle Muchai', 'Ai Shaaawrry', new Date()),
+    new Quote('Collin Owino', 'Michelle Muchai', 'Ai Shaaawrry', new Date()),
     new Quote('Collin Owino', 'Michelle Muchai', 'Ai Shaaawrry', new Date())
   ];
 
