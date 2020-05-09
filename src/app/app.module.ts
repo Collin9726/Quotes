@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { QoutesHomeComponent } from './qoutes-home/qoutes-home.component';
 import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
 import { QuotesFormComponent } from './quotes-form/quotes-form.component';
+import { HighestUpvotesDirective } from './highest-upvotes.directive';
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import { QuotesFormComponent } from './quotes-form/quotes-form.component';
     AppComponent,
     QoutesHomeComponent,
     QuoteDetailComponent,
-    QuotesFormComponent    
+    QuotesFormComponent,
+    HighestUpvotesDirective    
   ],
   imports: [
     BrowserModule,
