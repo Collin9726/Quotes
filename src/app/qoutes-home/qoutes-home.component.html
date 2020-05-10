@@ -17,7 +17,15 @@
                     <div *ngIf='quote.upvotes===upvotesObj.maxUpvotes;else elseBlock'>
                         <div appHighestUpvotes class="card">                                
                             <div (mouseenter)='toShow(i)' (mouseleave)='toHide(i)' class="card-body">
-                                <p (click)='deleteQuote(i)' class="text-right deleteQuote">X</p>                            
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p class="text-left time-passed">{{quote.currentTime|timePassed:quote.date}} min ago</p>
+                                    </div>
+                                    <div class="col-6">
+                                        <p (click)='deleteQuote(i)' class="text-right deleteQuote">X</p>
+                                    </div>
+                                </div>
+                                <hr>                                                            
                                 <blockquote class="blockquote mb-0">
                                     <p>"{{quote.quote}}"</p>
                                     <footer class="blockquote-footer">{{quote.author}}</footer>
@@ -31,7 +39,15 @@
                     <ng-template #elseBlock>
                         <div class="card">                                
                             <div (mouseenter)='toShow(i)' (mouseleave)='toHide(i)' class="card-body">
-                                <p (click)='deleteQuote(i)' class="text-right deleteQuote">X</p>                            
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p class="text-left time-passed">{{quote.currentTime|timePassed:quote.date}} min ago</p>
+                                    </div>                                    
+                                    <div class="col-6">
+                                        <p (click)='deleteQuote(i)' class="text-right deleteQuote">X</p>
+                                    </div>
+                                </div>
+                                <hr>                            
                                 <blockquote class="blockquote mb-0">                                    
                                     <p>"{{quote.quote}}"</p>                                   
                                     <footer class="blockquote-footer">{{quote.author}}</footer>

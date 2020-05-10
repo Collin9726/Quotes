@@ -12,6 +12,7 @@ export class QoutesHomeComponent implements OnInit {
   upvotesObj: Upvotes=new Upvotes();  
 
   addNewQuote(newQuote:Quote){
+    newQuote.date=new Date(newQuote.date);
     this.quotes.unshift(newQuote);
   }
 

@@ -5,5 +5,5 @@
     <button (click)='downvotePlus()' class="btn btn-outline-secondary btn-sm">Downvote</button>
     {{quote.downvotes}}
     <br>           
-    <p>Posted by <i>{{quote.yourName}}</i> on <i>{{quote.date|date}}</i>.</p>
+    <p class="posted-by">Posted by {{quote.yourName}} on {{quote.date|date}}.</p>
 </div>
