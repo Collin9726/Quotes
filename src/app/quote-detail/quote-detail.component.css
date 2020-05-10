@@ -1,3 +1,8 @@
 .posted-by{
     font-size: smaller;
 }
+
+.thumb-vote:hover{
+    cursor: pointer;
+    font-size: large;
+}

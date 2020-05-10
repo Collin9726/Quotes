@@ -63,7 +63,12 @@ blockquote{
 }
 
 .deleteQuote{
-    font-size: large;
+    font-size: small;
+}
+
+.deleteQuote:hover{
+    cursor: pointer;
+    color: brown;
 }
 
 .margin-b{

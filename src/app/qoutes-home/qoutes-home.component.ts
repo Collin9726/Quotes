@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Quote } from '../quote';
 import { Upvotes } from '../upvotes';
+import { faTrash } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-qoutes-home',
@@ -8,6 +9,7 @@ import { Upvotes } from '../upvotes';
   styleUrls: ['./qoutes-home.component.css']
 })
 export class QoutesHomeComponent implements OnInit {
+  faTrash=faTrash;
   quotes: Quote[]=[];
   upvotesObj: Upvotes=new Upvotes();  
 

@@ -9,6 +9,7 @@ import { QuoteDetailComponent } from './quote-detail/quote-detail.component';
 import { QuotesFormComponent } from './quotes-form/quotes-form.component';
 import { HighestUpvotesDirective } from './highest-upvotes.directive';
 import { TimePassedPipe } from './time-passed.pipe';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { TimePassedPipe } from './time-passed.pipe';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

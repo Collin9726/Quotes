@@ -22,7 +22,7 @@
                                         <p class="text-left time-passed">{{quote.currentTime|timePassed:quote.date}} min ago</p>
                                     </div>
                                     <div class="col-6">
-                                        <p (click)='deleteQuote(i)' class="text-right deleteQuote">X</p>
+                                        <p class="text-right"><fa-icon [icon] ="faTrash" (click)='deleteQuote(i)' class="deleteQuote"></fa-icon></p>
                                     </div>
                                 </div>
                                 <hr>                                                            
@@ -44,7 +44,7 @@
                                         <p class="text-left time-passed">{{quote.currentTime|timePassed:quote.date}} min ago</p>
                                     </div>                                    
                                     <div class="col-6">
-                                        <p (click)='deleteQuote(i)' class="text-right deleteQuote">X</p>
+                                        <p class="text-right"><fa-icon [icon]="faTrash" (click)='deleteQuote(i)' class="deleteQuote"></fa-icon></p>
                                     </div>
                                 </div>
                                 <hr>                            
