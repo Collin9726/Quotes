@@ -16,25 +16,29 @@
                 <div *ngFor='let quote of quotes; let i=index'>
                     <div *ngIf='quote.upvotes===upvotesObj.maxUpvotes;else elseBlock'>
                         <div appHighestUpvotes class="card">                                
-                            <div class="card-body">
+                            <div (mouseenter)='toShow(i)' (mouseleave)='toHide(i)' class="card-body">
                                 <p (click)='deleteQuote(i)' class="text-right deleteQuote">X</p>                            
                                 <blockquote class="blockquote mb-0">
                                     <p>"{{quote.quote}}"</p>
                                     <footer class="blockquote-footer">{{quote.author}}</footer>
                                 </blockquote><br>
-                                <app-quote-detail [quote]='quote' (thisUpvote)=updateVotes($event)></app-quote-detail>                               
+                                <div *ngIf='quote.showDescription'>
+                                    <app-quote-detail [quote]='quote' (thisUpvote)=updateVotes($event)></app-quote-detail>
+                                </div>                                                               
                             </div>                            
                         </div>
                     </div>
                     <ng-template #elseBlock>
                         <div class="card">                                
-                            <div class="card-body">
+                            <div (mouseenter)='toShow(i)' (mouseleave)='toHide(i)' class="card-body">
                                 <p (click)='deleteQuote(i)' class="text-right deleteQuote">X</p>                            
                                 <blockquote class="blockquote mb-0">                                    
                                     <p>"{{quote.quote}}"</p>                                   
                                     <footer class="blockquote-footer">{{quote.author}}</footer>
                                 </blockquote><br>
-                                <app-quote-detail [quote]='quote'></app-quote-detail>                               
+                                <div *ngIf='quote.showDescription'>
+                                    <app-quote-detail [quote]='quote'></app-quote-detail>
+                                </div>                                                               
                             </div>                            
                         </div>
                     </ng-template>                    

@@ -28,6 +28,14 @@ export class QoutesHomeComponent implements OnInit {
     this.upvotesObj.maxUpvotes=maxVotes;    
   }
 
+  toShow(i){
+    this.quotes[i].showDescription=true;
+  }
+
+  toHide(i){
+    this.quotes[i].showDescription=false;
+  }
+
   constructor() { }
 
   ngOnInit(): void {

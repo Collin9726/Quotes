@@ -39,7 +39,18 @@
 
 .card{
     background-color: rgb(211, 211, 211);
-    margin: 0%;    
+    margin: 0%;
+    padding: 0%;    
+}
+
+.card-body{
+    margin: 0%;
+    padding-bottom: 0%;
+}
+
+blockquote{
+    margin: 0%;
+    padding: 0%;
 }
 
 .card p{
