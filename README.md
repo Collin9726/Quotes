@@ -1,3 +1,5 @@
+[![codebeat badge](https://codebeat.co/badges/eff10099-56b1-45ac-96f9-92bf8d035fc4)](https://codebeat.co/projects/github-com-collin9726-quotes-master)
+
 # Quotes
 #### An app for quotes posted by users, 11/05/2020
 #### By [Collin Owino](https://github.com/Collin9726)
