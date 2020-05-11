@@ -13,6 +13,7 @@ posted quotes by either upvoting or downvoting them. Each quote begins with an i
 </table> 
 
 #### Latest updated version is on 11th May 2020.
+\*Check out the project through <a href="https://collin9726.github.io/Quotes">This Link.</a>
 
 ## Technologies used
 
